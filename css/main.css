@@ -346,8 +346,6 @@ h1, h2{
 	color: #333;
 }
 
-p{
-}
 a, a.active, a:focus, a.hover{
  /*verifier class*/
  color:#fff;
@@ -355,7 +353,6 @@ a, a.active, a:focus, a.hover{
 a.active, a:focus, a.hover{
  text-decoration:none;
 }
-	
 
 #logo img{
 	width: 64px;
@@ -367,28 +364,49 @@ section.alter, footer.alter{
 footer{
 	text-align:center;
 }
-
-.fadeIn {
-    opacity: 1;
-    animation: fade 2s linear;
+.footer_i{
+	display:inline-block;
+}
+.footer_p{
+	display:inline-block;
+}
+.footer_p::before{
+	content:"|"
 }
 
-p.s{
-	background-image: url(../img/icon.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-left: 126px;
+/****** Text + Img ****/
+
+.part{
+	display:flex;
+	flex-direction:row;
+	margin:40px 0;
 }
-p.s1{
+.part:hover{
+	background-color: hsla(0, 0%, 100%,0.1);
 }
 
-p.s2{
-	padding-right: 126px;
-	padding-left: 0px;
-    background-position: right;
+.part:nth-child(odd){
+	flex-direction:row-reverse;
 }
 
-p.s3{
+.part_i{
+	width: 64px;
+	position: relative;
+	min-width: 64px;
+}
+
+.part_i img{
+	width:64px;
+	height: 64px;
+	margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.part_t{
+	margin:0;
+	text-align: justify;
+	padding: 10px;
 }
 
 /****** Contact *******/
@@ -421,4 +439,82 @@ p.s3{
 
 .failed{
 	border:1px solid #F00;
+}
+
+/********* Mobile Only *******/
+
+@media only screen and (max-width: 600px) {
+  
+  section{
+	  padding: 2% calc(50% - 9em) 2%;
+  }
+  h2{
+	  margin-left:10px;
+  }
+  .part{
+	  display: block;
+  }
+  .part_i{
+	  width: 100%;
+		min-width: 100%;
+		height: 64px;
+  }
+  #formContact {
+    padding: 10px 20px;
+  }
+  .input textarea{
+	  min-height: 70px;
+  }
+  .label{
+	display:none;
+  }
+  .input input[type="submit"]{
+	  font-size:1em;
+	  width: 100%;
+  }
+  .footer_i, .footer_p{
+	display:block;
+  }
+  .footer_p{
+	  border-bottom:1px dotted #FFF;
+	  width:50%;
+	  margin:auto;
+  }
+  .footer_p::before{
+	content:""
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section{
+	padding: 2% calc(50% - 32em) 2%;
+	max-width: 64em;
+  }
+  h2{
+	  margin-left:10px;
+  }
+  .part_w{
+	display: flex;
+    flex-direction: row;
+  }
+  .part{
+	  display: block;
+	  margin: 10px;
+  }
+  .part:hover{
+	  margin-top: 5px;
+  }
+  .part_i{
+	  width: 100%;
+		min-width: 100%;
+		height: 64px;
+  }
+  .contact_w{
+	  display: flex;
+	flex-direction: row;
+  }
+  .contact_t, 
+  #emf-form{
+	 width: 50%;
+  }
 }
