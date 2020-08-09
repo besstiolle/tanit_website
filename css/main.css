@@ -390,3 +390,35 @@ p.s2{
 
 p.s3{
 }
+
+/****** Contact *******/
+#formContact{
+	padding: 20px 50px;
+}
+.label{
+	font-size:0.9em;
+}
+ .input textarea, .input input[type="text"]{
+	min-width:100%;
+	max-width:100%;
+	width:100%;
+}
+
+.input input[type='submit']{
+	font-size: 0.9em;
+	color: #FFF;
+	background-color: #7bc7de;
+	border: none;
+	padding: 5px 15px;
+	margin: 13px 0;
+}
+
+.mandatory:after{
+	content: " *";
+	color:#F00;
+	font-size:0.8em;
+}
+
+.failed{
+	border:1px solid #F00;
+}
