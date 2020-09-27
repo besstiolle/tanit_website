@@ -335,14 +335,23 @@ section, footer {
 /*******************
     Tanit CSS
 *******************/
-    
+@font-face {
+  font-family: BloggerSansLight;
+/*  src: url("fonts/BloggerSans-light/BloggerSans-Light.eot");*/ /* IE9 Compat Modes */
+  src:/* url("fonts/BloggerSans-light/BloggerSans-Light..eot?#iefix") format("embedded-opentype"), *//* IE6-IE8 */
+       url("/fonts/BloggerSans-light/BloggerSans-Light.woff") format("woff"), /* Modern Browsers */
+       url("/fonts/BloggerSans-light/BloggerSans-Light.ttf")  format("truetype")/*,*/ /* Safari, Android, iOS */
+      /* url("fonts/BloggerSans-light/BloggerSans-Light.svg#svgFontName") format("svg")*/; /* Legacy iOS */
+}
 
     
 body{
-	font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: BloggerSansLight, sans-serif;
 }
 h1, h2{
-	font-family: 'Rowdies', cursive;
+  /*font-family: Rowdies, cursive;*/
+  font-family: BloggerSansLight, cursive;
 	color: #333;
 }
 
@@ -487,8 +496,8 @@ footer{
 
 @media only screen and (min-width: 1024px) {
   section{
-	padding: 2% calc(50% - 32em) 2%;
-	max-width: 64em;
+	  padding: 2% calc(50% - 32em) 2%;
+	  max-width: 64em;
   }
   h2{
 	  margin-left:10px;
@@ -499,7 +508,9 @@ footer{
   }
   .part{
 	  display: block;
-	  margin: 10px;
+    margin: 10px;
+    min-width: 30%;
+    max-width: 40%;
   }
   .part:hover{
 	  margin-top: 5px;
