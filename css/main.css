@@ -321,7 +321,7 @@ header * {
   padding: 1em 0;
 }
 header h2 {
-  background-color: hsla(0, 0%, 100%,0.1);
+  background-color: hsla(0, 0%, 100%,0.3);
 }
 section, footer {
   background-color: hsl(60, 10%, 10%);
@@ -349,7 +349,14 @@ body{
   /*font-family: 'Roboto', sans-serif;*/
   font-family: BloggerSansLight, sans-serif;
 }
-h1, h2{
+h1{
+  /*font-family: Rowdies, cursive;*/
+  font-family: BloggerSansLight, cursive;
+  color: #000;
+  font-size: 5em;
+  padding-top: 0;
+}
+h2{
   /*font-family: Rowdies, cursive;*/
   font-family: BloggerSansLight, cursive;
 	color: #333;
@@ -362,9 +369,11 @@ a, a.active, a:focus, a.hover{
 a.active, a:focus, a.hover{
  text-decoration:none;
 }
-
+#logo{
+  padding:0;
+}
 #logo img{
-	width: 64px;
+	width: 256px;
 }
 
 section.alter, footer.alter{	
