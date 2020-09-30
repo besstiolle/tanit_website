@@ -286,7 +286,8 @@ body {
 header {
   box-sizing: border-box;
   min-height: 40vw;
-  padding: 30vw 0 5vw;
+  /*padding: 30vw 0 5vw;*/
+  padding: 10vw 0 5vw;
   position: relative;
   -webkit-transform-style: inherit;
   transform-style: inherit;
