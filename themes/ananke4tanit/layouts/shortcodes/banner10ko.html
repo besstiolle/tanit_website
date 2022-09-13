@@ -1,0 +1,27 @@
+{{/* 
+	shortcodes/image10ko
+
+	This partial ...
+
+	.Page
+
+*/}}
+
+{{ $imageParameter := .Get 0 }}
+{{ $image := .Page.Resources.GetMatch  $imageParameter | default "" }}
+
+{{ if $image }}
+	{{/* N/B */}}
+	{{ $imageT := $image.Filter (images.GaussianBlur 10) }}
+
+	{{/* Resizing */}}
+	{{ $imageT := $imageT.Resize "1024x jpg q85" }}
+	
+<div class="fixedBanner" style="background-image:url('{{ $imageT.RelPermalink }}')"></div>
+
+{{ else }}
+<p>image {{ $imageParameter }} not found !</p>
+{{ end }}
+
+
+

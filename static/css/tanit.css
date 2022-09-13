@@ -1,0 +1,12 @@
+.bg-top{
+    background-attachment: fixed;
+
+}
+
+.fixedBanner{
+    background-attachment: fixed;
+    background-size: 100%;
+    min-height: 8em;
+    margin-left: -5vw;
+    width: 56vw;
+}

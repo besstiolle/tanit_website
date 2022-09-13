@@ -1,0 +1,29 @@
+{{/* 
+	shortcodes/image10ko
+
+	This partial ...
+
+	.Page
+
+*/}}
+
+{{ $imageParameter := .Get 0 }}
+{{ $image := .Page.Resources.GetMatch  $imageParameter | default "" }}
+
+{{ if $image }}
+
+	{{/* Resizing */}}
+	{{ $imageT := $image.Resize "100x jpg q50" }}
+	
+	{{/* N/B */}}
+	{{ $imageT := $imageT.Filter (images.Grayscale) }}
+	
+
+<a href='{{ $image.RelPermalink }}'><img src="{{ $imageT.RelPermalink }}" width="{{ $imageT.Width }}" height="{{ $imageT.Height }}"></a>
+
+{{ else }}
+<p>image {{ $imageParameter }} not found !</p>
+{{ end }}
+
+
+
