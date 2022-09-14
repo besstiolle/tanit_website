@@ -12,3 +12,17 @@
     width: 130%;
     border-radius: 15px;
 }
+
+.fixedBannerInnerText{
+    position: relative;
+    background-color:rgba(0,0,0,.6);
+    width: 100%;
+    min-height: 8em;
+    border-radius: 15px;
+}
+.fixBannerH2{
+    line-height: 3em;
+    text-align: center;
+    font-size: 3rem;
+    color: #FFF;
+}

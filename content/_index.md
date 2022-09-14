@@ -10,7 +10,7 @@ cascade:
 featured_image: '/images/cover-ld.jpg'
 ---
 
-## Notre Vision
+{{< banner10ko "de_brique_et_demain (1).jpg" "Notre Vision">}}
 
 Si tout projet, démarche de gestion, politique publique intègre aujourd’hui les individus et acteurs concernés, trop souvent cette association reste marginale conduisant à l’élaboration et à la mise en œuvre de projets partiellement voir totalement inadaptés et peu appropriés par les individus concernés. Or face aux défis actuels que nous rencontrons en matière de changement climatique, de gestion de nos ressources, etc., il est primordial de replacer l’homme au cœur de nos réflexions afin que ces derniers d’élaborer des projets adaptés ET appropriés.
 
@@ -19,7 +19,6 @@ Afin de contribuer à une meilleure compréhension et gestion des relations qu�
 Tanit propose la réalisation d’études sociologiques et anthropologiques via l’élaboration et la réalisation d’enquêtes, de diagnostics, d’évaluation ou encore de l’analyse de jeux d’acteurs.
 Les champs d’intervention principalement couverts concernent : l’adaptation au changement climatique, la gestion de la zone côtière, la gestion des ressources marines, la gestion des espaces protégés, le paysage et les savoirs.
 
-{{< banner10ko "de_brique_et_demain (1).jpg" >}}
 
 ## Notre approche
 

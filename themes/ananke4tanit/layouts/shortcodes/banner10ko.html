@@ -8,6 +8,7 @@
 */}}
 
 {{ $imageParameter := .Get 0 }}
+{{ $textParameter := .Get 1 | default "" }}
 {{ $image := .Page.Resources.GetMatch  $imageParameter | default "" }}
 
 {{ if $image }}
@@ -17,7 +18,9 @@
 	{{/* Resizing */}}
 	{{ $imageT := $imageT.Resize "1024x jpg q85" }}
 	
-<div class="fixedBanner" style="background-image:url('{{ $imageT.RelPermalink }}')"></div>
+<div class="fixedBanner" style="background-image:url('{{ $imageT.RelPermalink }}')"><div class="fixedBannerInnerText">
+	{{ if $textParameter }}<h2 class="fixBannerH2">{{ $textParameter }}</h2>{{ end }}
+</div></div>
 
 {{ else }}
 <p>image {{ $imageParameter }} not found !</p>
