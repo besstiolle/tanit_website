@@ -5,8 +5,10 @@
 
 .fixedBanner{
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 8em;
-    margin-left: -5vw;
-    width: 56vw;
+    margin-left: -15%;
+    width: 130%;
+    border-radius: 15px;
 }
