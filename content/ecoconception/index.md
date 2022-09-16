@@ -19,7 +19,7 @@ Depuis 2016 rien ne s'est amélioré.
 [^1]: https://www.greenit.fr/2020/10/13/x38-notre-consommation-de-donnees-en-10-ans/
 [^2]: https://www.greenit.fr/2020/08/18/x171-la-croissance-du-poids-de-nos-logiciels/
 
-Le poids moyen d'un site internet en France en 2020 est de **5 OOO Kilo-octets**
+Le poids moyen d'un site internet en France en 2020 est de **5 OOO kilo-octets**
 
 Et pourtant cela à un coût. La surconsommation de la bande passante, le renouvellement abusif du à l'obsolescence programmée de nos smartphones incapables de rendre correctement les sites internet pesant plusieurs méga-octets.. Notre impact est réel[^3] et nous pouvons agir à commencer par faire attention aux médias distribués sur nos sites internet.
 
@@ -51,4 +51,4 @@ C'est un objectif qui est atteint, et nous sommes fier de proposer un site inter
 
 C'est donc bien possible :) 
 
-[^7] : https://kdanezis.fr/posts/plausible-vs-google-analytics/#plausible
+[^7]: https://kdanezis.fr/posts/plausible-vs-google-analytics/#plausible
